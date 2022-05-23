@@ -31,10 +31,10 @@ export const testCases: TestCase[] = [
     }
     const { reference } = elemFound;
     if (!/\b9\.2\.3\.76\b/.test(reference)) {
+      elemFound.reference = "9.2.3.76";
       console.warn(
         "SN UL PDCP UP TNL Information IE in clause 9.2.1.6 has been replace with 9.2.3.76"
       );
-      elemFound.reference = "9.3.1.2";
     }
   },
 ];
