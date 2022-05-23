@@ -13,7 +13,7 @@ export const testCases: TestCase[] = [
     if (!is38413(def, specNum)) {
       return;
     }
-    if (compareVersionString(specNum, "16.2.0") <= 0) {
+    if (compareVersionString(specNum, "16.2.0") < 0) {
       return 0;
     }
     const defFound = def.findDefinition("9.3.3.39");
