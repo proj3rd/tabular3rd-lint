@@ -31,10 +31,10 @@ export const testCases: TestCase[] = [
     }
     const { reference } = elemFound;
     if (!/\b9\.3\.1\.2\b/.test(reference)) {
+      elemFound.reference = "9.3.1.2";
       console.warn(
         "Reference of Handover Cause IE in clause 9.3.3.39 has been replace with 9.3.1.2"
       );
-      elemFound.reference = "9.3.1.2";
     }
   },
 ];
