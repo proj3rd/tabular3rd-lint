@@ -1,3 +1,5 @@
+import { Definitions } from "tabular3rd/dist/classes/definitions";
+
 export function compareVersionString(a: string, b: string) {
   const [major1, minor1, editorial1] = a.split(".");
   const [major2, minor2, editorial2] = b.split(".");
@@ -20,4 +22,12 @@ export function compareVersionString(a: string, b: string) {
     return 1;
   }
   return 0;
+}
+
+export function is(targetSpecNum: string) {
+  return (targetVersion: string) =>
+    (def: unknown, specNum: string, version: string) =>
+      def instanceof Definitions &&
+      specNum === targetSpecNum &&
+      compareVersionString(version, targetSpecNum) >= 0;
 }
