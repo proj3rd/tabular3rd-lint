@@ -2,7 +2,7 @@
   "name": "tabular3rd-lint",
   "private": true,
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "repository": "git@github.com:proj3rd/tabular3rd-lint",
   "author": "Seokseong Jeon <sjeon87+github@gmail.com>",
