@@ -1,4 +1,4 @@
-import { is } from "./func";
+import { is } from "./func.js";
 export const testCases = [
     /**
      * Maximum Integrity Protected Data Rate IE (9.3.1.57) should exist

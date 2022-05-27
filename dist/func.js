@@ -1,4 +1,4 @@
-import { Definitions } from "tabular3rd/dist/classes/definitions";
+import { Definitions } from "tabular3rd/dist/classes/definitions.js";
 export function compareVersionString(a, b) {
     const [major1, minor1, editorial1] = a.split(".");
     const [major2, minor2, editorial2] = b.split(".");
