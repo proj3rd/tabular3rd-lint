@@ -1,5 +1,5 @@
-import { is } from "./func";
-import { TestCase } from "./types";
+import { is } from "./func.js";
+import { TestCase } from "./types.js";
 
 export const testCases: TestCase[] = [
   /**
