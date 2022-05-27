@@ -1,6 +1,6 @@
-import { Definitions } from "tabular3rd/dist/classes/definitions";
-import { compareVersionString } from "./func";
-import { TestCase } from "./types";
+import { Definitions } from "tabular3rd/dist/classes/definitions.js";
+import { compareVersionString } from "./func.js";
+import { TestCase } from "./types.js";
 
 function is38413(def: unknown, specNum: string) {
   return def instanceof Definitions && specNum === "38413";
