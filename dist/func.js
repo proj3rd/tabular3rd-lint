@@ -25,6 +25,6 @@ export function compareVersionString(a, b) {
 export function is(targetSpecNum) {
     return (targetVersion) => (def, specNum, version) => def instanceof Definitions &&
         specNum === targetSpecNum &&
-        compareVersionString(version, targetSpecNum) >= 0;
+        compareVersionString(version, targetVersion) >= 0;
 }
 //# sourceMappingURL=func.js.map

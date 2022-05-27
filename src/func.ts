@@ -29,5 +29,5 @@ export function is(targetSpecNum: string) {
     (def: unknown, specNum: string, version: string) =>
       def instanceof Definitions &&
       specNum === targetSpecNum &&
-      compareVersionString(version, targetSpecNum) >= 0;
+      compareVersionString(version, targetVersion) >= 0;
 }
